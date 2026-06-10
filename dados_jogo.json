@@ -1,0 +1,90 @@
+{
+  "espacos": {
+    "começo_vila": {
+      "nome_lugar": "A Vila",
+      "descricao": "Você acorda numa vila pequena e silenciosa.\nAs ruas estão quase vazias. O vento carrega cochichos\nsobre uma mulher chamada Júlia, que supostamente sumiu.\nNinguém viu ela há dias. Algo está errado aqui.",
+      "saidas": {
+        "Igreja": [],
+        "Parque": [],
+        "Casa de Júlia": [],
+        "Fazenda": ["visitou_padre", "visitou_crianca", "visitou_casa"],
+        "Caverna": ["visitou_padre", "visitou_crianca", "visitou_casa", "visitou_fazenda"]
+      },
+      "opcoes": {
+        "1": { "lugar": "Igreja", "pos": [5, 10] },
+        "2": { "lugar": "Parque", "pos": [20, 10] },
+        "3": { "lugar": "Casa de Júlia", "pos": [34, 10] },
+        "4": { "lugar": "Fazenda", "pos": [5, 18] },
+        "5": { "lugar": "Caverna", "pos": [28, 18] }
+      }
+    },
+    "mapa2_parque": {
+      "nome_lugar": "Parque",
+      "saidas": { "A Vila": [] },
+      "opcoes": {
+        "1": { "lugar": "Criança", "pos": [5, 10] },
+        "2": { "lugar": "Ir embora", "pos": [20, 18] }
+      }
+    },
+    "mapa3_caverna_entrada": {
+      "nome_lugar": "Caverna — Entrada",
+      "descricao": "Sua lanterna ilumina uma figura no fundo da caverna.\nUm homem, que aparentemente é um fazendeiro, está tentando sair às pressas.\nEle está segurando uma faca com manchas de sangue em suas roupas.\nEle para imediantamente quando vê você e o lenhador juntos.",
+      "saidas": { "Caverna — Interior": [] },
+      "opcoes": {
+        "1": { "lugar": "Fazendeiro", "pos": [5, 10] },
+        "2": { "lugar": "Avançar", "pos": [20, 18] }
+      }
+    },
+    "mapa4_caverna_caminho": {
+      "nome_lugar": "Caverna — Caminho",
+      "descricao": "Túneis úmidos se abrem na rocha em três direções. Para onde seguir?",
+      "saidas": { "Em frente": [] },
+      "opcoes": {
+        "1": { "lugar": "Esquerda", "pos": [5, 10] },
+        "2": { "lugar": "Direita", "pos": [34, 10] },
+        "3": { "lugar": "Em frente", "pos": [20, 18] }
+      }
+    },
+    "mapa5_caverna_interior": {
+      "nome_lugar": "Caverna — Interior",
+      "descricao": "O lenhador que estava junto com você sai as pressas antes do fazendeiro e vai\navisar todos da vila sobre o fazendeiro e suas suspeitas respostas.\n\nNo fundo da caverna, a luz da lanterna revela uma mulher no chão.\nEla está gravemente ferida, coberta de sangue, tremendo.\nEla levanta os olhos para você. Olhos cheio de lágrimas e vazia.",
+      "saidas": { "Saída da Caverna": [] },
+      "opcoes": {
+        "1": { "lugar": "Julia", "pos": [20, 18] }
+      }
+    }
+  },
+  "interior": {
+    "Igreja": {
+      "npc": "Padre",
+      "item": null,
+      "descricao": "Uma igrejinha de pedra. O padre está varrendo o altar, de cabeça baixa."
+    },
+    "Casa de Júlia": {
+      "npc": null,
+      "item": "carta escrita à mão e uma foto da família",
+      "descricao": "A porta está entreaberta. Dentro, tudo revirado:\npratos quebrados, roupas espalhadas pelo chão.\nSobre a mesa, uma foto da família: Júlia, o marido e um menino\nsorrindo na frente da caverna. E uma carta escrita à mão."
+    },
+    "Parque": {
+      "npc": "Criança",
+      "item": null,
+      "descricao": "Um parquinho calmo. Uma criança balança sozinha, cantarolando."
+    },
+    "Fazenda": {
+      "npc": null,
+      "item": "silêncio e ovelhas pastando",
+      "descricao": "Um silêncio agonizante. Ovelhas pastam sem se mover praticamente.\nNão há ninguém por aqui, só o vento e um portão aberto com uma seta\napontando para a direção da caverna."
+    }
+  },
+  "estado": {
+    "itens": [],
+    "pergunta_feita": null,
+    "visitou_padre": false,
+    "visitou_crianca": false,
+    "visitou_casa": false,
+    "visitou_fazenda": false,
+    "fim": null
+  },
+  "LARGURA": 40,
+  "ALTURA": 20
+}
